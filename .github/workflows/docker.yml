@@ -29,11 +29,7 @@ jobs:
           push: true
           tags: minhtuyetvoi/binhminh-app:latest
 
-      - name: Run container
-        run: |
-          docker compose up -d
-          sleep 10
-          docker compose ps
+      
       - name: Triển khai lên DevOps Classroom
         run: |
           REPO="minhtuyetvoi/binhminh-app"
